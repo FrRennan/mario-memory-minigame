@@ -1,0 +1,49 @@
+.card {
+    position: relative;
+}
+.card div{
+    margin-top: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    /* filter: drop-shadow(10px 10px 0px rgba(0,0,0,0.3));    */
+    width: 45%;
+    /* display: block; */
+    image-rendering: pixelated; 
+    
+}
+.card .back{
+    filter: drop-shadow(10px 10px 0px rgba(0,0,0,0.3));   
+    /* width: 50%; */
+    /* display: block; */
+    /* image-rendering: pixelated;  */
+    
+}
+/* .card .front {
+    width: 80px;  
+    
+    
+} */
+/* .card .back {
+    
+    width: 100px;
+    
+} */
+
+/* front of card - the picture */
+.card .front {  
+    /* transform: rotateY(90deg);  */
+    transform: translate(0px, 0%);
+    transition: all 0.2s linear;  
+    /* transition-delay: 0.2s; */
+    position: absolute;
+}
+.flipped .front {
+    /* transform: rotateY(0deg);  */
+    transform: translate(0px, -100%);
+    /* transition: all 0.2s linear;   */
+    filter: drop-shadow(10px 10px 0px rgba(0,0,0,0.3));
+    
+}
